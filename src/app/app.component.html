@@ -1,7 +1,11 @@
+<router-outlet></router-outlet>
 <div>
   <p>{{title | lowercase}}</p>
   <div *ngIf="title">{{title | uppercase}}</div>
   <h1>{{count}}</h1>
+  <a routerLink="/">home</a><br/>
+  <a routerLink="/goods">goods</a><br/>
+  <a routerLink="items">items</a>
   <div>
     <app-products
       [products]="products"
