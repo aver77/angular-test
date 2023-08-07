@@ -1,0 +1,11 @@
+<div>
+  <p>Name: {{product.name}}</p>
+  <p>Type: {{product.type}}</p>
+  <button
+    [ngStyle]="{'background': !hidePrice ? 'green' : 'red'}"
+    (click)="hidePrice=!hidePrice"
+  >
+    {{hidePrice ? "Hide price" : "Show price"}}
+  </button>
+  <p *ngIf="hidePrice">Price: {{product.price}}</p>
+</div>

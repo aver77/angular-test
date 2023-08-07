@@ -1,13 +1,10 @@
 import {Component, Input} from "@angular/core"
-import {IProduct} from "../../../models";
+import {ITodo} from "../../../models";
 
 @Component({
-  selector: "app-product",
-  templateUrl: "./product.component.html"
+  selector: "app-todo",
+  templateUrl: "./todo.component.html"
 })
-export class ProductComponent {
-  console = console
-
-  hidePrice = false
-  @Input() product: IProduct
+export class TodoComponent {
+  @Input() todo: ITodo
 }
